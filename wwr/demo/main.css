@@ -1,0 +1,78 @@
+*, *:before, *:after {
+    box-sizing: border-box; 
+}
+
+/*  star sign: select all content
+    border box: defined area for content that won't overflow
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;   
+}
+
+body .content {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: red;
+
+}
+
+main {
+    background-color: aqua;
+    flex: 1;
+}
+
+footer {
+    background-color: red;
+}
+
+main article {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* cascading breaks media rules-- should always be last */
+@media (min-width: 768px) {
+    header, footer {
+        background-color: blueviolet;
+    }
+    main {
+        background-color: cadetblue;
+    }
+    main .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    main article {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    header, footer {
+        background-color: green;
+    }
+    main {
+        background-color: greenyellow;
+    }
+    main .content {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+    main article {
+        margin-bottom: 0;
+    }
+}
