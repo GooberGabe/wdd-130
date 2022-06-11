@@ -38,7 +38,7 @@ body {
     padding: 0;
 }
 header {
-    background-color: #F87060;
+    background-color: #396E94;
     display: grid;
     grid-template-columns: 150px auto;
     
@@ -190,9 +190,9 @@ nav a, .book, .join, footer a {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
-#home-grid {
+.home-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 footer .social img {
