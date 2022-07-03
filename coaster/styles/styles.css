@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Rubik:wght@500&display=swap');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #eb5e28   ;
+    --secondary-color: #252422 ;
+    --accent1-color: #403D39;
+    --accent2-color: #CCC5B9;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Rubik";
+    --paragraph-font: Roboto;
+}
+
+body {
+    background-color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    font-family: var(--heading-font);
+}
+
+p {
+    color: var(--accent2-color);
+    font-family: var(--paragraph-font);
+    font-size: 17pt;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: var(--heading-font);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--heading-font);
+}
+
+.social a {
+    margin: 0px 10px 0px 10px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.landing-img {
+    margin: 0 auto;
+    max-width: 300px;
+    max-height: 280px;
+}
+
+.landing-img:nth-of-type(1) {
+    grid-column: 2;
+}
+.landing-img:nth-of-type(2) {
+    grid-column: 3;
+}
+.landing-img:nth-of-type(3) {
+    grid-column: 4;
+}
+
+.landing-img:nth-of-type(1), .landing-img:nth-of-type(3) {
+    grid-row: 2/5;
+}
+
+.landing-img:nth-of-type(2) {
+    grid-row: 1/4;
+}
+
+#landing-1 h1 {
+    grid-column: 3;
+    grid-row: 3/5;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 40pt;
+}
+
+#landing-1 {
+    display: grid;
+    grid-column-gap: 50px;
+    margin: 12px 0px 0px 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+#landing-2 {
+    display: grid;
+    text-align: center;
+}
+
+.feature-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.feature-img {
+    max-width: 260px;
+    max-height: 380px;
+    min-width: 250px;
+    margin: 20px 60px 0px 30px;
+}
+
+.feature-box h1 {
+    font-size: 30pt;
+}
