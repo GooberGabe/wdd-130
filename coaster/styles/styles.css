@@ -29,6 +29,10 @@ p {
     font-size: 17pt;
 }
 
+#landing-2 p {
+    font-size: 20pt;
+}
+
 nav {
     display: flex;
     justify-content: space-evenly;
