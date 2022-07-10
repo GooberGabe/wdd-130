@@ -29,6 +29,43 @@ p {
     font-size: 17pt;
 }
 
+
+#featured-section {
+    text-align: center;
+}
+
+#featured-section h1 {
+    font-size: 23pt;
+}
+
+#featured-section p {
+    font-size: 15pt;
+}
+
+#featured-ride h1, #featured-park h1 {
+    font-size: 18pt;
+}
+
+.stat-box {
+    display: flex;
+    justify-content: center;
+
+    /* display: grid;
+    grid-auto-flow: column;
+    margin-inline: 30%;
+    */
+    
+}
+
+.stat-box p {
+    text-align: center;
+    font-size: 10pt;
+    margin: 8px;
+    padding: 6px;
+    border:2px solid #eb5e28;
+    border-radius: 7px;
+}
+
 #landing-2 p {
     font-size: 20pt;
 }
