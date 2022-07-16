@@ -18,7 +18,7 @@ body {
     padding: 0;
 }
 
-h1 {
+h1, h2, #search form label {
     color: white;
     font-family: var(--heading-font);
 }
@@ -29,31 +29,9 @@ p {
     font-size: 17pt;
 }
 
-
-#featured-section {
-    text-align: center;
-}
-
-#featured-section h1 {
-    font-size: 23pt;
-}
-
-#featured-section p {
-    font-size: 15pt;
-}
-
-#featured-ride h1, #featured-park h1 {
-    font-size: 18pt;
-}
-
 .stat-box {
     display: flex;
     justify-content: center;
-
-    /* display: grid;
-    grid-auto-flow: column;
-    margin-inline: 30%;
-    */
     
 }
 
@@ -166,4 +144,49 @@ footer {
 
 .feature-box h1 {
     font-size: 30pt;
+}
+
+.trending-ride img, #featured-section img {
+    max-width: 400px;
+}
+
+#featured-section, #trending-section {
+    text-align: center;
+}
+
+#featured-section h1, #trending-section h1, #search form label {
+    font-size: 23pt;
+}
+
+#featured-section p, #trending-section p {
+    font-size: 15pt;
+}
+
+#featured-ride h2, #featured-park h2, .trending-ride div h2 {
+    font-size: 18pt;
+}
+
+#search {
+    text-align: center;
+    box-sizing: border-box;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#search form {
+    text-align: center;
+    margin-top: 50px;
+    display:flex;
+    flex-direction: column;
+}
+
+#search form input {
+    margin-top: 30px;
+}
+
+#search form button {
+    margin-top: 6px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 30px;
 }
